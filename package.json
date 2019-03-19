@@ -1,0 +1,44 @@
+{
+  "name": "vue-system",
+  "version": "1.1.8",
+  "description": "",
+  "main": "src/lib.js",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/runtime": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "babel": "babel src -d lib",
+    "dev": "babel src -d example/src/system",
+    "p": "npm publish"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/transform-runtime"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yezi12138/vue-system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yezi12138/vue-system/issues"
+  },
+  "homepage": "https://github.com/yezi12138/vue-system#readme"
+}

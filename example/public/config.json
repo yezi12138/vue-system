@@ -1,0 +1,9 @@
+{
+  "host": "http://192.168.1.21:9091/cvoperationP/",
+  "hostNew": "http://192.168.1.21:9091/cvoperationJ/",
+  "bigScreen": "http://192.168.1.21:9091/screen/",
+  "management": "http://192.168.1.21:9091/management/",
+  "bill": "http://192.168.1.21:9091/bill/",
+  "viewChartFaultOptimizeTarget": "/index.html#/warn/overview",
+  "viewChartHealthOptimizeTarget": "/index.html#/dashboard/overview"
+}
