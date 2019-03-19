@@ -1,10 +1,11 @@
 {
   "name": "vue-system",
-  "version": "1.1.8",
+  "version": "1.2.0",
   "description": "",
-  "main": "src/lib.js",
+  "main": "dist/system.min.js",
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
   "dependencies": {},
   "devDependencies": {
