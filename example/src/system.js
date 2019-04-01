@@ -1,5 +1,5 @@
-// import VueSystem from 'vue-system'
-import VueSystem from './system/index'
+import VueSystem from 'vue-system'
+// import VueSystem from './system/index'
 import Axios from 'axios'
 import Router from 'vue-router'
 

@@ -30,7 +30,7 @@ let router = new (system.router)({
 })
 
 router.beforeEach((to, from, next) => {
-  console.log('router.beforeEach')
+  console.log('router.beforeEach', `${from.path} ----> ${to.path}`)
   request.reqManage && request.reqManage.cancelRouterReq(from.path)
   next()
 })
@@ -48,10 +48,13 @@ router.registerInitScript(function () {
 })
 
 router.registerPermission(function (to, from, next) {
-  console.log('registerPermission')
-  if (to.path === '/a') {
+  console.log('registerPermission', `${from.path} ----> ${to.path}`)
+  if (from.path !== '/error' && to.path !== '/error') {
     next('/error')
     return false
+  } else {
+    return true
   }
+  
 })
 export default router
